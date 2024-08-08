@@ -178,7 +178,7 @@ const createCard = (title, text, imagesSrc, price) => {
 const renderIntroProduct = async () => {
   const data = await getResIntroProduct();
   try {
-    let currentRow = createRow();
+    let currentRow = createRow(); // สร้าง row แรก
     for (let i = 0; i < data.titleData.length; i++) {
       if (i % 4 === 0) {
         cardContainer.appendChild(currentRow);
